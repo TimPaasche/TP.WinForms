@@ -12,4 +12,14 @@
     <ProjectReference Include="..\WinFormsConsole\TP.WinForms.Libary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="rsc\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="rsc\TP_Logo_150px_gray.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

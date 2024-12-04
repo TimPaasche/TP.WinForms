@@ -1,6 +1,6 @@
 ﻿namespace TestEnvirement;
 
-partial class Form1 {
+partial class MainForm {
     /// <summary>
     ///  Required designer variable.
     /// </summary>
@@ -24,6 +24,7 @@ partial class Form1 {
     ///  the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         testBtn = new Button();
         SuspendLayout();
         // 
@@ -37,14 +38,15 @@ partial class Form1 {
         testBtn.UseVisualStyleBackColor = true;
         testBtn.Click += testBtn_Click;
         // 
-        // Form1
+        // MainForm
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(800, 450);
         Controls.Add(testBtn);
-        Name = "Form1";
-        Text = "Form1";
+        Icon = (Icon)resources.GetObject("$this.Icon");
+        Name = "MainForm";
+        Text = "TP-Playgound";
         ResumeLayout(false);
     }
 
